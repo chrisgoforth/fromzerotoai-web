@@ -1,0 +1,14 @@
+name: 🚀 Deploy to Vercel
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  trigger-vercel-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Vercel Build Hook
+        run: |
+          curl -X POST https://vercel.app/api/buildhook/123
