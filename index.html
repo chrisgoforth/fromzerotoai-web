@@ -1,50 +1,84 @@
-// pages/index.js
-
-import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
-
-export default function Home() {
-  return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <Head>
-        <title>From Zero to AI</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className="flex flex-col items-center w-full flex-1 px-20 text-center">
-        <h1 className="text-5xl font-bold mt-10">
-          Welcome to <span className="text-blue-600">From Zero to AI</span>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Transform your business with AI-driven solutions.
-        </p>
-
-        <div className="flex flex-wrap justify-center max-w-4xl mt-6 sm:w-full">
-          <Link href="/services">
-            <a className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600">
-              <h3 className="text-2xl font-bold">Our Services &rarr;</h3>
-              <p className="mt-4 text-xl">
-                Discover a wide range of AI solutions tailored for your business.
-              </p>
-            </a>
-          </Link>
-
-          <Link href="/about">
-            <a className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600">
-              <h3 className="text-2xl font-bold">About Us &rarr;</h3>
-              <p className="mt-4 text-xl">
-                Get to know the team and mission behind From Zero to AI.
-              </p>
-            </a>
-          </Link>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Connect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background: #2196f3;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+        .hero {
+            background: #e3f2fd;
+            padding: 2rem;
+            text-align: center;
+        }
+        .section {
+            padding: 2rem;
+            margin: 0 auto;
+            max-width: 900px;
+        }
+        .cta-button {
+            background-color: #2196f3;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .testimonial {
+            background-color: #fafafa;
+            border-left: 5px solid #2196f3;
+            margin: 1rem 0;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AI Connect</h1>
+    </header>
+    <section class="hero">
+        <h2>Empower Your Business with AI</h2>
+        <p>Discover the tools and strategies to leverage AI in your daily operations.</p>
+        <a href="#" class="cta-button">Get Started</a>
+    </section>
+    <section class="section" id="introduction">
+        <h2>Welcome to AI Connect</h2>
+        <p>AI Connect is your gateway to understanding and implementing AI solutions tailored to your needs.</p>
+    </section>
+    <section class="section" id="featured-tools">
+        <h2>Featured AI Tools</h2>
+        <p>Explore our curated selection of AI tools designed to enhance your productivity.</p>
+        <!-- Placeholder for tool thumbnails -->
+    </section>
+    <section class="section" id="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial">
+            <p>"AI Connect has transformed the way we approach AI projects. It's a game-changer!"</p>
+            <cite>- John Doe, Tech Entrepreneur</cite>
         </div>
-      </main>
-
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <p>&copy; 2023 From Zero to AI. All Rights Reserved.</p>
-      </footer>
-    </div>
-  );
-}
+        <!-- More testimonials can be added here -->
+    </section>
+    <section class="section" id="newsletter">
+        <h2>Stay Updated</h2>
+        <p>Join our newsletter to get the latest insights and trends in AI.</p>
+        <form action="#" method="post">
+            <input type="email" name="email" placeholder="Your email address" required>
+            <button type="submit" class="cta-button">Subscribe</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2023 AI Connect</p>
+    </footer>
+</body>
+</html>
